@@ -1,0 +1,25 @@
+{
+  "name": "apimongonode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucaslopeslima95/Node-Type-Mongo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucaslopeslima95/Node-Type-Mongo/issues"
+  },
+  "homepage": "https://github.com/lucaslopeslima95/Node-Type-Mongo#readme",
+  "dependencies": {
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.9.4"
+  }
+}
