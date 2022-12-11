@@ -1,16 +1,16 @@
 import express from "express";
 import mongoose from "mongoose";
+import routes from "./Routes/routes";
 
 const app = express();
 
-mongoose.connect('mongodb://localhost/firstsapi');//endereço de onde o mongo esta rodando
+mongoose.set("strictQuery", true);
+mongoose.connect('mongodb://localhost/firstapi');//endereço de onde o mongo esta rodando
 
 app.use(express.json());
 
-app.get("/",(req,res)=>{
-    res.send("primeiro teste")
-});
+app.use(routes);
 
 app.listen(3333, ()=> {
-
+    console.log("Server Listen");
 })
